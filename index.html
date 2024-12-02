@@ -1,101 +1,102 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>NewJeans fanpage Website</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+<html lang="en"> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>NewJeans Fanpage Website</title> 
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Shadows+Into+Light&family=Signika:wght@300..700&display=swap" rel="stylesheet">
   <script src="js/script.js"></script>
 </head>
 <body>
-  <!--navigation bar -->
+
+  <!-- Navigation bar at the top of the page -->
   <header>
-    <div class="navbar ">
-      <div class = "logo">
-        <img src = "images/logo.jpg" height = "55" alt="NewJeans Logo"> 
+    <div class="navbar">
+      <div class="logo">
+        <!-- Logo image for the website -->
+        <img src="images/logo.jpg" height="55" alt="NewJeans Logo">
       </div>
       <nav>
-      <a href = "index.html">Homepage</a>
-      <a href = "profiles.html">Member Profiles</a>
-      <a href = "music.html">Music and Videos</a>
-      <a href = "achievements.html">Achievements</a>
-    </nav>
+        <!-- Navigation links to different pages of the website -->
+        <a href="index.html">Homepage</a>
+        <a href="profiles.html">Member Profiles</a>
+        <a href="music.html">Music and Videos</a>
+        <a href="achievements.html">Achievements</a>
+      </nav>
     </div>
   </header>
 
-
-  <!-- Homepage Section -->
+  <!-- Homepage section with banner image -->
   <section id="home" class="section">
     <div class="banner">
-      <img src="images/starting group banner.png" alt="NewJeans Banner"
-      height="450">
+      <img src="images/starting group banner.png" alt="NewJeans Banner" height="450">
     </div>
   </section>
 
-
-<!-- cd that is responsive, plays music on the bottom right -->
-</head>
-<body>
+  <!-- Responsive CD player section that plays music, fixed at the bottom right -->
   <div class="cd-container">
     <audio id="audio" controls loop>
-      <source src="ditto audio.mp4" type="audio/mp4"> 
+      <!-- Audio source for the music (Ditto) -->
+      <source src="ditto audio.mp4" type="audio/mp4">
     </audio>
-    <img src="images/cd.jpeg" alt="Spinning CD" class="cd" height = 10>
+    <!-- Spinning CD image -->
+    <img src="images/cd.jpeg" alt="Spinning CD" class="cd" height="10">
   </div>
-</body>
-</html>
 
+  <!-- Main content area -->
   <main>
+    <!-- Introduction section about NewJeans -->
     <section id="introduction">
       <h2>Introduction</h2>
       <div class="introduction-container">
-        <img src="images/introduction.jpg" alt ="newjeans photo" height="200px" id="introduction">
-        <p>NewJeans is a South Korean girl group formed by ADOR. The group is composed of five members: Minji, Hanni, 
-          Danielle, Haerin, and Hyein. They are known for their girl next door image and "easy listening" pop and R&B 
-          songs inspired by the music of the 1990s. They debuted in July 2022 with the single "Attention", their first 
-          number-one song on South Korea's Circle Digital Chart</p>
+        
+        <img src="images/introduction.jpg" alt="NewJeans photo" height="200px" id="introduction">
+        <p>NewJeans is a 5-member girl group formed by ADOR, a sub-label of HYBE. The group debuted on July 22, 2022. 
+           The group is composed of five members: Minji, Hanni, Danielle, Haerin, and Hyein. Their debut album "New Jeans" 
+           was a commercial success, earning them the title of 2022's 'It Girl' group.</p>
       </div>
     </section>
 
+    <!-- Section displaying NewJeans' albums -->
     <section id="albums">
       <h2>Albums Collection</h2>
       <div class="albums-container">
-          <div class="album-group">
-              <div class="text">
-                  <h3>2022</h3>
-                  <p>The group's first release, their self-titled extended play (2022), topped the South Korean Circle 
-                    Album Chart and became the best-selling debut album by a K-pop female act, with over one million 
-                    copies sold. It was supported by three singles: "Attention", "Hype Boy", and "Cookie". Both 
-                    "Attention" and "Hype Boy" received a platinum certification for streaming in South Korea and a 
-                    gold certification for streaming in Japan. The former topped the South Korean Circle Digital Chart, 
-                    and the latter became the longest-running song on the Billboard Global 200 by a K-pop female act. </p>
-              </div>
-              <img src="images/2022.jpg" alt="2022 Album Cover" class="year-image">
+          
+        <!-- 2022 Album -->
+        <div class="album-group">
+          <div class="text">
+            <h3>2022</h3>
+            <p>NewJeans debuted in 2022 with their self-titled EP, New Jeans. The EP featured four tracks: 
+              "Attention", "Hype Boy", "Cookie", and "Hurt".</p>
           </div>
-  
-          <div class="album-group">
-              <img src="images/2023.jpg" alt="2023 Album Cover" class="year-image">
-              <div class="text">
-                  <h3>2023</h3>
-                  <p>NewJeans' first single album, OMG (2023), was their second number one on the Circle Album Chart and 
-                    reached the top 10 on charts in Japan and Portugal. It sold over one million copies in South Korea 
-                    and was supported by two singles that were both certified platinum for streaming in Japan: "Ditto" and 
-                    "OMG". The former was also certified platinum for streaming in South Korea and became the longest-running
-                    number-one song on the Circle Digital Chart and the group's first entry on international charts including 
-                    the Canadian Hot 100, the UK Singles Chart, and the US Billboard Hot 100. </p>
-              </div>
+          <img src="images/2022.jpg" alt="2022 Album Cover" class="year-image">
+        </div>
+
+        <!-- 2023 Album -->
+        <div class="album-group">
+          <img src="images/2023.jpg" alt="2023 Album Cover" class="year-image">
+          <div class="text">
+            <h3>2023</h3>
+            <p>In 2023, NewJeans continued their success with the single album OMG, which included the tracks 
+              "OMG" and "Ditto". While OMG presented an upbeat vibe, Ditto sparked fan discussions and theories, 
+              further elevating the group's reputation.</p>
           </div>
-  
-          <div class="album-group">
-              <div class="text">
-                  <h3>2024</h3>
-                  <p>In 2024, NewJeans released their first full-length album, supernatural. This album received 
-                    critical acclaim, cementing their status as global icons and trailblazers in the K-pop industry.</p>
-              </div>
-              <img src="images/2024.jpg" alt="2024 Album Cover" class="year-image">
+        </div>
+
+        <!-- 2024 Album -->
+        <div class="album-group">
+          <div class="text">
+            <h3>2024</h3>
+            <p>In 2024, NewJeans released their first full-length album, Supernatural. This album received 
+              critical acclaim, cementing their status as global icons and trailblazers in the K-pop industry.</p>
           </div>
+          <img src="images/2024.jpg" alt="2024 Album Cover" class="year-image">
+        </div>
+
       </div>
-  </section>
+    </section>
   </main>
 
 </body>
-
 </html>
