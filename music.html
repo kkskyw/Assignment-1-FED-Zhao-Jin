@@ -1,114 +1,144 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>NewJeans fanpage Website</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/music.css">
+<html lang="en"> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>NewJeans Fanpage Website</title> 
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Shadows+Into+Light&family=Signika:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- navigation bar -->
-    <header>
-        <div class="navbar">
-            <div class="logo">
-                <img src="images/logo.jpg" height="55" alt="NewJeans Logo">
-            </div>
-            <nav>
-                <a href="index.html">Homepage</a>
-                <a href="profiles.html">Member Profiles</a>
-                <a href="music.html">Music and Videos</a>
-                <a href="achievements.html">Achievements</a>
-            </nav>
-        </div>
-    </header>
+  <!-- Navigation Bar -->
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <!-- Logo image for the website -->
+        <img src="images/logo.jpg" height="55" alt="NewJeans Logo">
+      </div>
+      <nav>
+        <!-- Navigation links to different pages of the website -->
+        <a href="index.html">Homepage</a>
+        <a href="profiles.html">Member Profiles</a>
+        <a href="music.html">Music and Videos</a>
+        <a href="achievements.html">Achievements</a>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Banner -->
-    <section class="banner-section">
-        <img src="images/Newjeans banner pg 3.jpeg" alt="NewJeans Banner" height="470">
-    </section>
+  <!-- Banner Section -->
+  <section class="banner-section">
+    <img src="images/Newjeans banner pg 3.jpeg" alt="NewJeans Banner" height="470">
+  </section>
 
-    <!-- music albums -->
-    <section class="music-section">
-        <div class="section-title">
-            <h2>Music Albums</h2>
-        </div>
-        <!-- Grid layout for displaying album covers -->
-        <div class="album-grid">
-            <!-- First row of albums -->
-            <div class="album-row-1">
-                <div class="album-item">
-                    <img src="images/attention.jpg" alt="Attention">
-                </div>
-                <div class="album-item">
-                    <img src="images/omg.jpg" alt="OMG">
-                </div>
-                <div class="album-item">
-                    <img src="images/remix.jpg" alt="Remix">
-                </div>
-                <div class="album-item">
-                    <img src="images/coke.jpg" alt="Coca Cola">
-                </div>
-            </div>
-            <!-- second row of albums -->
-            <div class="album-row-2">
-                <div class="album-item">
-                    <img src="images/how sweet.jpg" alt="How Sweet">
-                </div>
-                <div class="album-item">
-                    <img src="images/supernatural.jpg" alt="Supernatural">
-                </div>
-                <div class="album-item">
-                    <img src="images/super shy.jpg" alt="Super Shy">
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Music Albums Section -->
+  <section class="music-section">
+    <div class="section-title">
+      <h2>Music Albums</h2>
+    </div>
+    <div class="album-grid">
+      <div class="album-row-1">
+         <a href="https://www.youtube.com/watch?v=js1CtxSY38I" class="album-link">
+            <div class="album-item">
+                <img src="images/attention.jpg" alt="Attention">
+                <h4>Attention</h4>
+              </div>
+         </a>
 
-    <!-- Jeans Zine  video section -->
-    <section class="zine-section">
-        <div class="section-title">
-            <h2>Jeans Zine</h2>
+        <a href="https://www.youtube.com/watch?v=sVTy_wmn5SU" class="album-link">
+            <div class="album-item">
+                <img src="images/omg.jpg" alt="OMG">
+                <h4>OMG</h4>
+              </div>
+         </a>
+         
+        <a href="https://www.youtube.com/watch?v=ZVwuD0oGsog&list=PLC0gUvWkXLtBESqZC2tZLpJwUITB0qQDH&index=4" class="album-link">
+        <div class="album-item">
+          <img src="images/remix.jpg" alt="Remix">
+          <h4>NJWMX</h4>
         </div>
-        <div class="video-grid">
-            <div class="video-item">
-                <a href="#" target="_blank">
-                    <img src="images/zine1.jpg" alt="Zine Episode 1">
-                    <p class="video-title">[Jeans' ZINE] 가을캠프 EP.2 게임에는 팀워크가 필요해💗 | NewJeans</p>
-                </a>
-            </div>
-            <!-- Each video item with thumbnail, title, and link -->
-            <div class="video-item">
-                <a href="#" target="_blank">
-                    <img src="images/zine2.jpg" alt="Zine Episode 2">
-                    <p class="video-title">[Jeans' ZINE] 가을캠프 EP.1 가: 가을이요~ 을 : 을마나 좋은데요~🍂 |NewJeans</p>
-                </a>
-            </div>
-            <div class="video-item">
-                <a href="#" target="_blank">
-                    <img src="images/zine3.jpg" alt="Zine Episode 3">
-                    <p class="video-title">[Jeans' ZINE] 모다니‘s 버킷리스트: 이미 우린 저기 멀리🦅 높이 있는 풍선 같이🪂 | NewJeans</p>
-                </a>
-            </div>
-            <div class="video-item">
-              <a href="#" target="_blank">
-                  <img src="images/zine4.jpg" alt="Zine Episode 4">
-                  <p class="video-title">[Jeans' ZINE] 민지's 버킷리스트: 내가 만든 도자기🎵 너를 위해 구웠지🎶 | NewJeans</p>
-              </a>
-          </div>
-          <div class="video-item">
-            <a href="#" target="_blank">
-                <img src="images/zine5.jpg" alt="Zine Episode 5">
-                <p class="video-title">[Jeans' ZINE] 뉴진스파랜드 EP.2 찜질방 적응기🤞 | NewJeans</p>
-            </a>
-          </div>
-          <div class="video-item">
-            <a href="#" target="_blank">
-              <img src="images/zine6.jpg" alt="Zine Episode 6">
-              <p class="video-title">[Jeans' ZINE] 제1회 JZ 퀴즈쇼 EP.2 예상했어 나 🧐 | NewJeans</p>
-            </a>
-          </div>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=XIOoqJyx8E4" class="album-link">
+        <div class="album-item">
+          <img src="images/coke.jpg" alt="Coca Cola">
+          <h4>Zero</h4>
         </div>
-    </section>
+        </a>
+      </div>
+
+      <div class="album-row-2">
+        <!-- the next row -->
+         
+        <a href="https://www.youtube.com/watch?v=Q3K0TOvTOno" class="album-link">
+        <div class="album-item">
+          <img src="images/how sweet.jpg" alt="How Sweet">
+          <h4>How Sweet</h4>
+        </div>
+        </a>
+        
+        <a href="https://www.youtube.com/watch?v=A4S8zl50AdM" class="album-link">
+        <div class="album-item">
+          <img src="images/supernatural.jpg" alt="Supernatural">
+          <h4>Supernatural</h4>
+        </div>
+        </a>
+        
+        <a href="https://www.youtube.com/watch?v=ArmDp-zijuc" class="album-link">
+        <div class="album-item">
+          <img src="images/super shy.jpg" alt="Super Shy">
+          <h4>Super Shy</h4>
+        </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Jeans Zine Section -->
+  <section class="zine-section">
+    <div class="section-title">
+      <h2>Jeans Zine</h2>
+    </div>
+    <div class="video-grid">
+      <!-- Video items for Zine episodes -->
+      <div class="video-item">
+        <a href="https://www.youtube.com/watch?v=Yk9rlNH8gxc&list=PLNy-PdPlJT7GIZycus7PvS7FiPJhrtMyI&index=2" target="_blank">
+          <img src="images/zine1.jpg" alt="Zine Episode 1">
+          <p class="video-title">[Jeans' ZINE] 가을캠프 EP.2 게임에는 팀워크가 필요해💗 | NewJeans</p>
+        </a>
+      </div>
+      <div class="video-item">
+        <a href="https://www.youtube.com/watch?v=FuJ1RiLoq-M&list=PLNy-PdPlJT7GIZycus7PvS7FiPJhrtMyI&index=3" target="_blank">
+          <img src="images/zine2.jpg" alt="Zine Episode 2">
+          <p class="video-title">[Jeans' ZINE] 가을캠프 EP.1 가: 가을이요~ 을 : 을마나 좋은데요~🍂 | NewJeans</p>
+        </a>
+      </div>
+      <div class="video-item">
+        <a href="https://www.youtube.com/watch?v=rK255fyJF_I&list=PLNy-PdPlJT7GIZycus7PvS7FiPJhrtMyI&index=4" target="_blank">
+          <img src="images/zine3.jpg" alt="Zine Episode 3">
+          <p class="video-title">[Jeans' ZINE] 모다니‘s 버킷리스트: 이미 우린 저기 멀리🦅 높이 있는 풍선 같이🪂 | NewJeans</p>
+        </a>
+      </div>
+      <div class="video-item">
+        <a href="https://www.youtube.com/watch?v=tbwUq7TeuwM&list=PLNy-PdPlJT7GIZycus7PvS7FiPJhrtMyI&index=5" target="_blank">
+          <img src="images/zine4.jpg" alt="Zine Episode 4">
+          <p class="video-title">[Jeans' ZINE] 민지's 버킷리스트: 내가 만든 도자기🎵 너를 위해 구웠지🎶 | NewJeans</p>
+        </a>
+      </div>
+      <div class="video-item">
+        <a href="https://www.youtube.com/watch?v=b59fhbp_WAw&list=PLNy-PdPlJT7GIZycus7PvS7FiPJhrtMyI&index=6" target="_blank">
+          <img src="images/zine5.jpg" alt="Zine Episode 5">
+          <p class="video-title">[Jeans' ZINE] 뉴진스파랜드 EP.2 찜질방 적응기🤞 | NewJeans</p>
+        </a>
+      </div>
+      <div class="video-item">
+        <a href="https://www.youtube.com/watch?v=50LYcGiWDBY&list=PLNy-PdPlJT7GIZycus7PvS7FiPJhrtMyI&index=8" target="_blank">
+          <img src="images/zine6.jpg" alt="Zine Episode 6">
+          <p class="video-title">[Jeans' ZINE] 제1회 JZ 퀴즈쇼 EP.2 예상했어 나 🧐 | NewJeans</p>
+        </a>
+      </div>
+    </div>
+  </section>
 
 </body>
 </html>
