@@ -1,20 +1,22 @@
-
+// Function to toggle images visibility
 function toggleImages(event) {
-  event.preventDefault();
-  const defaultImages = document.getElementById('default-images');
+  event.preventDefault(); // Prevent the default action (e.g., if it's a link click)
+  
+  // Get references to the default and additional images, and the 'more' link
+  const defaultImages = document.getElementById('default-images'); 
   const moreImages = document.getElementById('more-images');
   const moreLink = document.querySelector('.more-link');
 
-// Check if the default images are currently visible
+  // Check if the default images are currently visible
   if (defaultImages.style.display !== 'none') {
-    // Hide the default images and show the additional images
+      // Hide default images and show more images
       defaultImages.style.display = 'none';
       moreImages.style.display = 'block';
-      moreLink.textContent = 'less';
+      moreLink.textContent = 'less'; 
   } else {
-    // Show the default images and hide the additional images
-      defaultImages.style.display = 'grid';// Assume default images use a grid layout
+      // Show default images and hide more images
+      defaultImages.style.display = 'grid';
       moreImages.style.display = 'none';
-      moreLink.textContent = 'more';
+      moreLink.textContent = 'more'; 
   }
 }
