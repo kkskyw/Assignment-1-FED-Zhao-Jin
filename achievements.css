@@ -1,0 +1,124 @@
+/* Navigation bar */
+header {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 40px;  
+    width: 100%;  
+  }
+  
+  .logo {
+    flex-shrink: 0;  
+  }
+  
+  .logo img {
+    height: 55px;
+  }
+  
+  nav {
+    flex: 1;  
+    display: flex;
+    justify-content: center;  /* Center the links */
+    gap: 80px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #6495ED;
+  }
+
+/* New styles for achievements.css */
+.banner-section {
+    width: 100%;
+    height: 470px;
+    margin-top: 75px;  /* Leave space for the fixed navigation bar */
+}
+
+.banner-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-title {
+    color: #333;
+    font-size: 20px;
+    margin: 40px 0 30px 100px;
+    padding-left: 15px;
+    position: relative;
+}
+
+.section-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background-color: #6b4ce6;
+    border-radius: 2px;
+}
+
+.award-item {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    padding: 0 100px;
+}
+
+.award-item img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.award-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.award-content h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 0 0 15px 0;
+}
+
+.award-content p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .award-item {
+        padding: 0 20px;
+        flex-direction: column;
+    }
+
+    .award-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .section-title {
+        margin-left: 20px;
+    }
+}

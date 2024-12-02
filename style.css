@@ -1,0 +1,200 @@
+/* Global style reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  line-height: 1.6;
+}
+
+/* navigation bar style */
+header {
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 10px 40px;  
+  width: 100%;  
+}
+
+.logo {
+  flex-shrink: 0;  
+}
+
+.logo img {
+  height: 55px;
+}
+
+nav {
+  flex: 1;  
+  display: flex;
+  justify-content: center;  /* center the links */
+  gap: 80px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #6495ED;
+}
+
+/* main content area */
+main {
+  max-width: 1200px;
+  margin: 80px auto 0;
+  padding: 0 20px;
+}
+
+/* Banner section */
+.banner {
+  width: 100%;
+  text-align: center;
+  margin-top: 75px;
+}
+
+.banner img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+}
+
+/* Introduction section */
+#introduction {
+  margin: 40px 0;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 20px;
+  position: relative;
+  padding-left: 15px;
+}
+
+h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background-color: #4169E1;
+  border-radius: 2px;
+}
+
+
+.introduction-container {
+  display: flex;
+  gap: 30px;
+  align-items: center;  
+}
+
+.introduction-container img {
+  width: 400px; 
+  height: auto;
+  border-radius: 8px;
+}
+
+.introduction-container p {
+  flex: 1;
+  line-height: 1.8;
+  color: #333;
+  margin: auto 0;
+}
+
+/* Albums Collection section */
+.albums-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;  
+  margin-bottom: 80px;  
+}
+
+.album-group {
+  border: 2px solid #030303;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+
+
+.album-group img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.album-group .text {
+  flex: 1;
+}
+
+.album-group.text-left {
+  flex-direction: row;  /* text on the left, image on the right */
+}
+
+.album-group.text-right {
+  flex-direction: row-reverse;  /* image on the left, text on the right */
+}
+
+
+/* CD player styles */
+.cd-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.cd {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* responsive design */
+@media (max-width: 768px) {
+  .navbar {
+      padding: 10px 20px;
+  }
+  
+  .introduction-container,
+  .album-group {
+      flex-direction: column;
+  }
+  
+  .introduction-container img,
+  .album-group img {
+      width: 100%;
+      max-width: 300px;
+  }
+  
+  main {
+      padding: 0 15px;
+  }
+}
