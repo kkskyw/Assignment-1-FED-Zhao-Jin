@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NewJeans fanpage Website</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/profiles.css">
+  <script src="js/script.js"></script>
+</head>
+<body>
+        <!--navigation bar -->
+        <header>
+          <div class="navbar">
+            <!-- logo of the group -->
+              <div class="logo">
+                  <img src="images/logo.jpg" height="55" alt="NewJeans Logo">
+              </div>
+              <nav>
+                  <a href="index.html">Homepage</a>
+                  <a href="profiles.html">Member Profiles</a>
+                  <a href="music.html">Music and Videos</a>
+                  <a href="achievements.html">Achievements</a>
+              </nav>
+          </div>
+      </header>
+
+
+      <!-- Homepage Section with banner -->
+      <section id="home" class="section">
+        <div class="banner">
+          <!-- Large banner image at the top of the homepage -->
+          <img src="images/Newjeans banner pg 2.jpeg" alt="NewJeans Banner2"
+          height="470">
+        </div>
+      </section>
+
+      <!-- link to individual member introduction-->
+       <section class="members-section">
+        <div class="member-profiles">
+          <div class="member-item">
+            <a href="profile members/MemberMinji.html" target="_blank">
+                <img src="images/member minji.jpg" alt="about minji">
+            </a>
+            <p>Minji</p>
+          </div>
+      
+          <div class="member-item">
+            <a href="profile members/MemberHanni.html" target="_blank">
+                <img src="images/member hanni.jpg" alt="about hanni">
+            </a>
+            <p>Hanni</p>
+          </div>
+
+          <div class="member-item">
+            <a href="profile members/MemberHanni.html" target="_blank">
+                <img src="images/member danielle.jpg" alt="about danielle">
+            </a>
+            <p>Danielle</p>
+          </div>
+
+
+          <div class="member-item">
+            <a href="profile members/MemberHanni.html" target="_blank">
+                <img src="images/member haerin.jpg" alt="about haerin">
+            </a>
+            <p>Haerin</p>
+          </div>
+
+          <div class="member-item">
+            <a href="profile members/MemberHanni.html" target="_blank">
+                <img src="images/member hyein.jpg" alt="about hyein">
+            </a>
+            <p>Hyein</p>
+          </div>
+        </div>
+       </section>
+      
+
+      <!--responsive buttons members and group pictures-->
+      <div class="section-header">
+        <h1>Member and Group Pictures</h1>
+        <!-- link to toggle the visiblity of more images-->
+        <a href="#" class="more-link" onclick="toggleImages(event)">more</a>
+      </div>
+
+      <!-- default group images-->
+      <div class="image-grid" id="default-images">
+          <div class="image-item">
+              <img src="images/group picture 1.jpg" alt="Image 1">
+          </div>
+          <div class="image-item">
+              <img src="images/group picture 2.jpg" alt="Image 2">
+          </div>
+          <div class="image-item">
+               <img src="images/group picture 3.jpg" alt="Image 3">
+          </div>
+          <div class="image-item">
+                <img src="images/group picture 4.jpg" alt="Image 4">
+          </div>
+    </div>
+
+     <!-- Hidden additional images that will be revealed when "more" is clicked -->
+    <div class="image-grid-extended" id="more-images" style="display: none;">
+      <!-- Row of smaller images -->
+      <div class="image-row">
+          <img src="images/pic1.jpg" alt="pic1">
+          <img src="images/pic2.jpg" alt="Member 2">
+          <img src="images/pic3.jpg" alt="Member 3">
+          <img src="images/pic4.jpg" alt="Member 4">
+      </div>
+      <!-- Larger group pictures -->
+      <div class="image-row-large">
+          <img src="images/pic5.jpg" alt="Group 1">
+          <img src="images/pic6.jpg" alt="Group 2">
+      </div>
+  </div>
+
+</body>
+</html>
